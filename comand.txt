@@ -1,0 +1,8 @@
+x86 con NASM 
+
+sudo apt update
+sudo apt install nasm binutils -y
+
+nasm -f elf32 program.asm -o program.o
+ld -m elf_i386 program.o -o program
+./program
